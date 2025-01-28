@@ -1,0 +1,19 @@
+class Pet:
+    def __init__(self,name,species,age):
+        self.name=name
+        self.species=species
+        self.age=age
+        
+    def describe_pet(self):
+        print(f"my pet {self.name}, is a {self.species}, and is {self.age} years old")
+    
+    
+    def birthday(self):
+        print(f"happy birthday{self.name},you are now {self.age+1} years old")
+        
+name=input("enter a pet name")
+specie=input("enter a pet specie")
+age=int(input("enter a pet age "))
+p=Pet(name,specie,age)  
+p.describe_pet()
+p.birthday()
